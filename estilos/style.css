@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root {    
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: "Sriracha", cursive;
+
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total do elemento */
+}
+
+html,body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: #2C2F33;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+    
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 3.5vw;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(55, 54, 54);
+    color: white;
+    box-shadow: inset 6px 6px 13px black;
+    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa durante a rolagem */  
+}
+
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.53);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    padding: 20px;
+    max-width: 600px;
+}
+
+section#img01 {
+    background-image: url("../imagens/Gemini_Generated_Image_axphfzaxphfzaxph.png");
+    background-size: cover; /* Garante que a imagem cubra toda a área do elemento */
+    background-position: center; /* Centraliza a imagem */
+}
+
+section#img02{
+    background-image: url("../imagens/Gemini_Generated_Image_ipib72ipib72ipib.png");
+    background-size: cover;
+    background-position: center;
+}
+
+section#img03 {
+    background-image: url("../imagens/Gemini_Generated_Image_8umd5s8umd5s8umd.png");
+    background-size: cover;
+    background-position: center;
+}
+footer {
+    background-color: #2C2F33;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
